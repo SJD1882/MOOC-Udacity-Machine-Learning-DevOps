@@ -1,3 +1,7 @@
+# Repo-specific
+project_1_customer_churn/data/
+project_1_customer_churn/Guide.ipynb
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
