@@ -1,18 +1,21 @@
 # ML DevOps Engineer Nanodegree Udacity - 1/4 - *Predict Customer Churn*
 
-<br>
-
 ## 1. Project Description
-
-<br>
 
 Project **Predict Customer Churn** of ML DevOps Engineer Nanodegree Udacity. Goal is to refactor coding work on customer churn prediction - identifying users with the highliest likelihood of leaving your customer base - into more production-friendly standards (script quality, logging, testing), i.e moving away from user-friendly but messy Jupyter Notebooks into standard Python scripts.
 
-<br>
+## 2. Checklist
 
-## 2. Files and data description
+- [x] PEP 8-compliant scripts (score of 7.38/10 for `churn_library.py` and 7.5/10 for `churn_script_logging_and_tests.py`)
+- [x] Contains Project README
+- [x] Document strings for functions and Python modules
+- [x] Tests for each function
+- [x] Logs storing errors and info in `.log` files (which can be launched via the command line)
+- [x] EDA/results plots and serialized models stored in `results`
+- [x] `churn_library.py` follows main Data Science steps (EDA, Feature Engineering, Training, Prediction, Evaluation)
+- [x] Categorical columns handled with mean encoding
 
-<br>
+## 3. Files and data description
 
 File structure:
 
@@ -31,8 +34,6 @@ File structure:
 - `README.md`
 - `requirements_py3.8.txt`
 
-<br>
-
 The dataset required for running all the Python scripts is located in the folder `data` under `bank_data.csv`. It can also be found on [Kaggle](https://www.kaggle.com/datasets/mathchi/churn-for-bank-customers) or is provided in the ML DevOps Engineer Nanodegree.
 
 This dataset contains information on customer churn behavior, including transaction/consumption behavior and socio-economic status. We are trying to predict likelihood of customer churn through 19 explanatory variables:
@@ -41,17 +42,13 @@ This dataset contains information on customer churn behavior, including transact
 
 The percentage of customer churn is low (less than 10%) but we can still train machine learining models in order to predict the likelihood of churn and also evalute which of the 19 explanatory variables are the most likely to correlate with the willingness to churn.
 
-## 3. Results
-
-<br>
+## 4. Results
 
 After running different models and obtaining decent performance with Random Forests on the testing set (ROC AUC of 99%, meaning almost perfect ability to distinguish loyal customers from demotivated customers), we find that **customer spending amounts are the explanatory variables that correlate the most with customer churn**. This makes sense: after all, highly active customers making many purchases are unlikely to be unsatisfied to the point of churn. 
 
 ![](images/results/feature_importances.png)
 
-## 4. Running Files
-
-<br>
+## 5. Running Files
 
 Moving into the cloned repository:
 
